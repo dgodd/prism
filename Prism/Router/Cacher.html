@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.25.0">
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Router::Cacher - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth">
+      <a href="../../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authable" data-name="prism::authable">
+      <a href="../../Prism/Authable.html">Authable</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Callbacks" data-name="prism::callbacks">
+      <a href="../../Prism/Callbacks.html">Callbacks</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth">
+      <a href="../../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/vladfaust/prism/Prism/Router/Cacher" data-name="prism::router::cacher">
+      <a href="../../Prism/Router/Cacher.html">Cacher</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/SimpleCacher" data-name="prism::router::simplecacher">
+      <a href="../../Prism/Router/SimpleCacher.html">SimpleCacher</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">abstract class</span> Prism::Router::Cacher
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Prism/Router/Cacher.html">Prism::Router::Cacher</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Boost <code><a href="../../Prism/Router.html">Router</a></code> performance with caching!</p>
+
+<p>Example:</p>
+
+<pre><code>cacher <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span><span class="t">::</span><span class="t">SimpleCacher</span>.<span class="k">new</span>(<span class="n">10_000</span>)
+router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span>(cacher) <span class="k">do</span>
+  <span class="c"># ...</span>
+<span class="k">end</span></code></pre>
+
+
+
+
+
+
+
+
+
+  <h2>Direct Known Subclasses</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../Prism/Router/SimpleCacher.html">Prism::Router::SimpleCacher</a></li>
+  
+  </ul>
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router/cacher.cr#L12" target="_blank">prism/router/cacher.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#find%28tree%2Cpath%29%3ARadix%3A%3AResult%28Node%29-instance-method" class="signature"><strong>#find</strong>(tree, path) : Radix::Result(Node)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="find(tree,path):Radix::Result(Node)-instance-method">
+      <div class="signature">
+        abstract 
+        def <strong>find</strong>(tree, path) : Radix::Result(Node)
+
+        <a class="method-permalink" href="#find%28tree%2Cpath%29%3ARadix%3A%3AResult%28Node%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router/cacher.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

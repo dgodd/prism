@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.25.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Callbacks - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth">
+      <a href="../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authable" data-name="prism::authable">
+      <a href="../Prism/Authable.html">Authable</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/vladfaust/prism/Prism/Callbacks" data-name="prism::callbacks">
+      <a href="../Prism/Callbacks.html">Callbacks</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth">
+      <a href="../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/Cacher" data-name="prism::router::cacher">
+      <a href="../Prism/Router/Cacher.html">Cacher</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/SimpleCacher" data-name="prism::router::simplecacher">
+      <a href="../Prism/Router/SimpleCacher.html">SimpleCacher</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Prism::Callbacks
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>This module allows to define callbacks.</p>
+
+<p>Example usage:</p>
+
+<pre><code><span class="k">class</span> <span class="t">MyClass</span>
+  <span class="k">include</span> <span class="t">Callbacks</span>
+
+  <span class="k">def</span> <span class="m">my_call</span>
+    with_callbacks <span class="k">do</span>
+      puts <span class="s">&quot;call&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  before <span class="k">do</span>
+    puts <span class="s">&quot;before&quot;</span>; <span class="n">true</span> <span class="c"># If any of `before` callbacks returns falsey value, the call is aborted</span>
+  <span class="k">end</span>
+
+  before <span class="k">do</span>
+    puts <span class="s">&quot;another before&quot;</span>; <span class="n">true</span>
+  <span class="k">end</span>
+
+  around <span class="k">do</span>
+    puts <span class="s">&quot;begin around&quot;</span>
+    <span class="k">yield</span>
+    puts <span class="s">&quot;end around&quot;</span>
+  <span class="k">end</span>
+
+  around <span class="k">do</span>
+    puts <span class="s">&quot;begin inner around&quot;</span>
+    <span class="k">yield</span>
+    puts <span class="s">&quot;end inner around&quot;</span>
+  <span class="k">end</span>
+
+  <span class="c"># After callbacks are always called despite of `around` return value</span>
+  after <span class="k">do</span>
+    puts <span class="s">&quot;after&quot;</span>
+  <span class="k">end</span>
+
+  after <span class="k">do</span>
+    puts <span class="s">&quot;will not be called&quot;</span> <span class="c"># Because previous definition returns nil</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">MyClass</span>.<span class="k">new</span>.my_call
+
+<span class="c"># =&gt; before</span>
+<span class="c"># =&gt; another before</span>
+<span class="c"># =&gt; begin around</span>
+<span class="c"># =&gt; begin inner around</span>
+<span class="c"># =&gt; call</span>
+<span class="c"># =&gt; end inner around</span>
+<span class="c"># =&gt; end around</span>
+<span class="c"># =&gt; after</span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/callbacks.cr#L57" target="_blank">prism/callbacks.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#with_callbacks%28%26block%29-instance-method" class="signature"><strong>#with_callbacks</strong>(&block)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Macro Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#after-macro" class="signature"><strong>after</strong></a>
+        
+          <div class="summary"><p>Add after callback.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#around-macro" class="signature"><strong>around</strong></a>
+        
+          <div class="summary"><p>Add around callback.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#before-macro" class="signature"><strong>before</strong></a>
+        
+          <div class="summary"><p>Add before callback.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="with_callbacks(&amp;block)-instance-method">
+      <div class="signature">
+        
+        def <strong>with_callbacks</strong>(&block)
+
+        <a class="method-permalink" href="#with_callbacks%28%26block%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/callbacks.cr#L129" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Macro Detail</h2>
+  
+    <div class="entry-detail" id="after-macro">
+      <div class="signature">
+        
+        macro <strong>after</strong>
+
+        <a class="method-permalink" href="#after-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Add after callback.
+Should return truthy value, otherwise other after callbacks are not called.
+Futher after callbacks are called later.</p>
+
+<pre><code>after <span class="k">do</span>
+  puts <span class="s">&quot;after&quot;</span>; <span class="n">true</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/callbacks.cr#L121" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="around-macro">
+      <div class="signature">
+        
+        macro <strong>around</strong>
+
+        <a class="method-permalink" href="#around-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Add around callback. Further around callbacks are deeper in the stack.</p>
+
+<pre><code>around <span class="k">do</span>
+  puts <span class="s">&quot;before call&quot;</span>
+  <span class="k">yield</span>
+  puts <span class="s">&quot;after call&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/callbacks.cr#L104" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="before-macro">
+      <div class="signature">
+        
+        macro <strong>before</strong>
+
+        <a class="method-permalink" href="#before-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Add before callback.
+Should return truthy value, otherwise the whole callback chain is aborted.
+Futher before callbacks are called later.</p>
+
+<pre><code>before <span class="k">do</span>
+  puts <span class="s">&quot;before&quot;</span>; <span class="n">true</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/callbacks.cr#L87" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>

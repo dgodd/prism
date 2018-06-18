@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.25.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Params - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth">
+      <a href="../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authable" data-name="prism::authable">
+      <a href="../Prism/Authable.html">Authable</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Callbacks" data-name="prism::callbacks">
+      <a href="../Prism/Callbacks.html">Callbacks</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth">
+      <a href="../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/Cacher" data-name="prism::router::cacher">
+      <a href="../Prism/Router/Cacher.html">Cacher</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/SimpleCacher" data-name="prism::router::simplecacher">
+      <a href="../Prism/Router/SimpleCacher.html">SimpleCacher</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Prism::Params
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Request params typecasting and validation module.</p>
+
+<p>Extracts params from (nearly) all possible sources and casts them accordingly (invoking <code>Type.from_param</code>) into a <code>NamedTuple</code>.</p>
+
+<pre><code><span class="k">class</span> <span class="t">SimpleAction</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Params</span>
+
+  params <span class="k">do</span>
+    param <span class="n">:foo</span>, <span class="t">Int32</span>?
+    param <span class="n">:name</span>, <span class="t">String</span>, validate: {size: {min: <span class="n">3</span>}}
+    param <span class="s">&quot;kebab-case-time&quot;</span>, <span class="t">Time</span>?
+    param <span class="n">:bar</span>, nilable: <span class="n">true</span> <span class="k">do</span> <span class="c"># Nested params are supported too</span>
+      param <span class="n">:baz</span> <span class="k">do</span>
+        param <span class="n">:qux</span>, <span class="t">String</span>?
+        param <span class="n">:qax</span>, <span class="t">Array</span>(<span class="t">String</span>)? <span class="c"># Yep, arrays</span>
+      <span class="k">end</span>
+
+      param <span class="n">:quux</span>, <span class="t">Int32</span>, proc: (quux : <span class="t">Int32</span>) -> { quux <span class="o">*</span> <span class="n">2</span> }
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">self</span>.call(context)
+    params <span class="o">=</span> parse_params(context, limit: <span class="n">1</span>.gb) <span class="c"># Limit is default to 8 MB</span>
+
+    p params[<span class="n">:foo</span>].<span class="k">class</span>
+    <span class="c"># =&gt; Int32?</span>
+
+    p params[<span class="n">:name</span>].<span class="k">class</span>
+    <span class="c"># =&gt; String</span>
+
+    p params[<span class="s">&quot;kebab-case-time&quot;</span>].<span class="k">class</span>
+    <span class="c"># =&gt; Time?</span>
+
+    p params[<span class="n">:bar</span>]?.try <span class="o">&amp;</span>.[<span class="n">:baz</span>][<span class="n">:qux</span>].<span class="k">class</span>
+    <span class="c"># =&gt; String?</span>
+
+    p params[<span class="n">:bar</span>]?.try <span class="o">&amp;</span>.[<span class="n">:baz</span>][<span class="n">:qax</span>].<span class="k">class</span>
+    <span class="c"># =&gt; Array(String)?</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<p><span class="flag purple">NOTE</span>  Params can be accessed both by <code><a href="../String.html">String</a></code> and <code>Symbol</code> keys.</p>
+
+<p>Params parsing order (latter rewrites previous):</p>
+
+<ol><li>Path params;</li><li>Request query params (.e.g "/?foo=42");</li><li>Multipart form data (only if <code>"Content-Type"</code> is <code>"multipart/form-data"</code>);</li><li>Body params (only if <code>"Content-Type"</code> is <code>"application/x-www-form-urlencoded"</code>);</li><li>JSON body (only if <code>"Content-Type"</code> is <code>"application/json"</code>).</li></ol>
+
+<p><span class="flag purple">NOTE</span>  Parsing will replace original request body with its shrinked copy IO (defaults to 8 MB).</p>
+
+<p>If you want to implement your own type casting, extend it with <code>.from_param</code> method (see <code><a href="../Int.html#from_param%28param%3APrism%3A%3AParams%3A%3AAbstractParam%29-class-method">Int.from_param</a></code> for example).</p>
+
+<p>If included into <code><a href="../Prism/Action.html">Prism::Action</a></code>, it will automatically inject <code><a href="../Prism/Params.html#parse_params%28context%2Climit%3AUInt64%3DDEFAULT_MAX_BODY_SIZE%29-class-method">.parse_params</a></code> into <code>Action#before</code> callback:</p>
+
+<pre><code><span class="k">struct</span> <span class="t">MyPrismAction</span> <span class="o">&lt;</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Action</span>
+  <span class="k">include</span> <span class="t">Params</span>
+
+  params <span class="k">do</span>
+    param <span class="n">:id</span>, <span class="t">Int32</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">call</span>
+    p params[<span class="n">:id</span>].<span class="k">class</span> <span class="c"># =&gt; Int32</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../Prism/Params/Validation.html">Prism::Params::Validation</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+  <h2>Direct including types</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../Prism/Action/Params.html">Prism::Action::Params</a></li>
+  
+    <li class="other-type"><a href="../Prism/Channel/Params.html">Prism::Channel::Params</a></li>
+  
+  </ul>
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/abstract_param.cr#L1" target="_blank">prism/params/abstract_param.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/definition.cr#L1" target="_blank">prism/params/definition.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/errors.cr#L1" target="_blank">prism/params/errors.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/ext/named_tuple/from_param.cr#L1" target="_blank">prism/ext/named_tuple/from_param.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/parsing.cr#L6" target="_blank">prism/params/parsing.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/validation.cr#L1" target="_blank">prism/params/validation.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params.cr#L76" target="_blank">prism/params.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="DEFAULT_MAX_BODY_SIZE">
+        <strong>DEFAULT_MAX_BODY_SIZE</strong> = <code><span class="t">UInt64</span>.<span class="k">new</span>(<span class="n">8</span> <span class="o">*</span> (<span class="n">1024</span> <span class="o">**</span> <span class="n">2</span>))</code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>8 MB ought to be enough for anybody.</p>
+      </dd>
+      
+    
+  </dl>
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#parse_params%28context%2Climit%3AUInt64%3DDEFAULT_MAX_BODY_SIZE%29-class-method" class="signature"><strong>.parse_params</strong>(context, limit : UInt64 = <span class="t">DEFAULT_MAX_BODY_SIZE</span>)</a>
+        
+          <div class="summary"><p>Extract then cast and validate params from a body limited to <em>limit</em> bytes.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Macro Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#param%28name%2Ctype_type%3Dnil%2C%2A%2Aoptions%29-macro" class="signature"><strong>param</strong>(name, type _type = nil, **options)</a>
+        
+          <div class="summary"><p>Define a single param or nested params.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#params-macro" class="signature"><strong>params</strong></a>
+        
+          <div class="summary"><p>An <strong>essential</strong> params definition block.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="parse_params(context,limit:UInt64=DEFAULT_MAX_BODY_SIZE)-class-method">
+      <div class="signature">
+        
+        def self.<strong>parse_params</strong>(context, limit : UInt64 = <span class="t">DEFAULT_MAX_BODY_SIZE</span>)
+
+        <a class="method-permalink" href="#parse_params%28context%2Climit%3AUInt64%3DDEFAULT_MAX_BODY_SIZE%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Extract then cast and validate params from a body limited to <em>limit</em> bytes. Returns <code>NamedTuple</code> of params.</p>
+
+<p>Could raise <code><a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a></code>, <code><a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a></code> or <code><a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a></code> on failure.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/parsing.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Macro Detail</h2>
+  
+    <div class="entry-detail" id="param(name,type_type=nil,**options)-macro">
+      <div class="signature">
+        
+        macro <strong>param</strong>(name, type _type = nil, **options)
+
+        <a class="method-permalink" href="#param%28name%2Ctype_type%3Dnil%2C%2A%2Aoptions%29-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Define a single param or nested params. Must be called within the <code><a href="../Prism/Params.html#params-macro">#params</a></code> block.</p>
+
+<p>Example:</p>
+
+<pre><code>params <span class="k">do</span>
+  param <span class="n">:user</span> <span class="k">do</span>
+    param <span class="n">:email</span>, <span class="t">String</span>, validate: {regex: <span class="s">/@/</span>}
+    param <span class="n">:password</span>, <span class="t">String</span>, validate: {size: (<span class="n">0</span>..<span class="n">32</span>)}
+    param <span class="n">:age</span>, <span class="t">Int32</span>?
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<p><strong>Nested params</strong> (e.g. <code>param :user do</code>) can have following options:</p>
+
+<ul><li><em>nilable</em> (<code>false</code> by default).</li></ul>
+
+<p><strong>Single param</strong> has two mandatory arguments:</p>
+
+<ul><li><em>name</em> declares an access key for the <code><a href="../Prism/Params.html#params-macro">params</a></code> tuple;</li><li><em>type</em> defines a type which the param must be casted to, otherwise validation will fail (i.e. "foo" won't cast to <code>Int32</code>). You can declary an arbitary type, union or array (e.g. <code><a href="../Array.html">Array</a>(UInt16)</code>), must it respond to <code>.from_param</code>. See <code><a href="../Int.html#from_param%28param%3APrism%3A%3AParams%3A%3AAbstractParam%29-class-method">Int.from_param</a></code> and its siblings for implementations.</li></ul>
+
+<p><span class="flag purple">NOTE</span>  Union Array type isn't supported, e.g. <code>param :foo, <a href="../Array.html">Array</a>(Int32 | <a href="../String.html">String</a>)</code> is invalid because of uncertainty of how to process it, for example <code>["42"]</code> - should <code>"42"</code> stay String or be casted to Int32?</p>
+
+<p><strong>Single param</strong> can also have some options:</p>
+
+<ul><li><em>nilable</em> declares if this param is nilable (the same effect is achieved with nilable <em>type</em>, i.e. <code>Int32?</code>);</li><li><em>validate</em> defines validation options. See <code><a href="../Prism/Params/Validation.html">Validation</a></code>;</li><li><em>proc</em> will be called each time the param is casted (right after validation). The param becomes the returned value, so this <em>proc</em> <strong>must</strong> return the same type.</li></ul>
+
+<p><span class="flag purple">NOTE</span>  If a param is nilable, but is present and of invalid type, an <code><a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a></code> will be raised.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params/definition.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="params-macro">
+      <div class="signature">
+        
+        macro <strong>params</strong>
+
+        <a class="method-permalink" href="#params-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>An <strong>essential</strong> params definition block.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/params.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>

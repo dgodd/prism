@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.25.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Router - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth">
+      <a href="../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authable" data-name="prism::authable">
+      <a href="../Prism/Authable.html">Authable</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Callbacks" data-name="prism::callbacks">
+      <a href="../Prism/Callbacks.html">Callbacks</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth">
+      <a href="../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/Cacher" data-name="prism::router::cacher">
+      <a href="../Prism/Router/Cacher.html">Cacher</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/SimpleCacher" data-name="prism::router::simplecacher">
+      <a href="../Prism/Router/SimpleCacher.html">SimpleCacher</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Prism::Router
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Prism/Router.html">Prism::Router</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Routes a request's path, injecting matching <code>ContextProc</code> into <code>context.request.action</code> and path params into <code>context.request.path_params</code>.</p>
+
+<p>Always calls next handler.</p>
+
+<p>See <code><a href="../Prism/Router/Cacher.html">Cacher</a></code> for known caching implementations.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  get <span class="s">&quot;/&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello world!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span>
+
+server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</span><span class="t">Server</span>.<span class="k">new</span>(<span class="n">5000</span>, [router]) <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+  action.call(context) <span class="k">if</span> action <span class="o">=</span> context.request.action
+<span class="k">end</span></code></pre>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">HTTP::Handler</li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router/cacher.cr#L1" target="_blank">prism/router/cacher.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router/simple_cacher.cr#L3" target="_blank">prism/router/simple_cacher.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L27" target="_blank">prism/router.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28cacher%3ACacher%3F%3Dnil%29-class-method" class="signature"><strong>.new</strong>(cacher : Cacher? = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Initialize a new router with optional <em>cacher</em> and yield it.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28cacher%3Dnil%2C%26block%29-class-method" class="signature"><strong>.new</strong>(cacher = <span class="n">nil</span>, &block)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#cacher%3APrism%3A%3ARouter%3A%3ACacher%3F-instance-method" class="signature"><strong>#cacher</strong> : Prism::Router::Cacher?</a>
+        
+          <div class="summary"><p>Cacher used by this router.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cacher%3D%28cacher%29-instance-method" class="signature"><strong>#cacher=</strong>(cacher)</a>
+        
+          <div class="summary"><p>Cacher used by this router.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#call%28context%3AHTTP%3A%3AServer%3A%3AContext%29-instance-method" class="signature"><strong>#call</strong>(context : HTTP::Server::Context)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete%28path%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#delete</strong>(path, action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>DELETE</code> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete%28path%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#delete</strong>(path, &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>DELETE</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete%28path%29-instance-method" class="signature"><strong>#delete</strong>(path)</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> with <code>DELETE</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get%28path%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#get</strong>(path, &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>GET</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get%28path%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#get</strong>(path, action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>GET</code> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get%28path%29-instance-method" class="signature"><strong>#get</strong>(path)</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> with <code>GET</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on%28path%2Cmethods%3AArray%28String%29%29-instance-method" class="signature"><strong>#on</strong>(path, methods : Array(String))</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> and <em>methods</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on%28path%2Cmethods%3AArray%28String%29%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#on</strong>(path, methods : Array(String), action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> and <em>methods</em> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on%28path%2Cmethods%3AArray%28String%29%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#on</strong>(path, methods : Array(String), &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> and <em>methods</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options%28path%29-instance-method" class="signature"><strong>#options</strong>(path)</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> with <code>OPTIONS</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options%28path%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#options</strong>(path, action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>OPTIONS</code> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options%28path%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#options</strong>(path, &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>OPTIONS</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#patch%28path%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#patch</strong>(path, &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>PATCH</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#patch%28path%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#patch</strong>(path, action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>PATCH</code> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#patch%28path%29-instance-method" class="signature"><strong>#patch</strong>(path)</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> with <code>PATCH</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#post%28path%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#post</strong>(path, &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>POST</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#post%28path%29-instance-method" class="signature"><strong>#post</strong>(path)</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> with <code>POST</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#post%28path%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#post</strong>(path, action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>POST</code> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#put%28path%29-instance-method" class="signature"><strong>#put</strong>(path)</a>
+        
+          <div class="summary"><p>Draw a empty (status 200) route for <em>path</em> with <code>PUT</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#put%28path%2Caction%3AAction.class%29-instance-method" class="signature"><strong>#put</strong>(path, action : Action.class)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>PUT</code> calling <em>action</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#put%28path%2C%26proc%3AContextProc%29-instance-method" class="signature"><strong>#put</strong>(path, &proc : ContextProc)</a>
+        
+          <div class="summary"><p>Draw a route for <em>path</em> with <code>PUT</code> method.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ws%28path%2C%26proc%3AWebSocketProc%29-instance-method" class="signature"><strong>#ws</strong>(path, &proc : WebSocketProc)</a>
+        
+          <div class="summary"><p>Draw a WebSocket route for <em>path</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ws%28path%2Cchannel%3AChannel.class%29-instance-method" class="signature"><strong>#ws</strong>(path, channel : Channel.class)</a>
+        
+          <div class="summary"><p>Draw a WebSocket route for <em>path</em> instantiating <em>channel</em>.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(cacher:Cacher?=nil)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(cacher : <a href="../Prism/Router/Cacher.html">Cacher</a>? = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new%28cacher%3ACacher%3F%3Dnil%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Initialize a new router with optional <em>cacher</em> and yield it. You should then define routes in <em>&block</em>.</p>
+
+<pre><code><span class="c"># The simplest router</span>
+router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  get <span class="s">&quot;/&quot;</span> <span class="k">do</span> <span class="o">|</span>env<span class="o">|</span>
+    env.response.print <span class="s">&quot;Hello world!&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c"># Add some caching</span>
+cacher <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span><span class="t">::</span><span class="t">SimpleCacher</span>.<span class="k">new</span>(<span class="n">10_000</span>)
+router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span>(cacher) <span class="k">do</span>
+  <span class="c"># ditto</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L57" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new(cacher=nil,&amp;block)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(cacher = <span class="n">nil</span>, &block)
+
+        <a class="method-permalink" href="#new%28cacher%3Dnil%2C%26block%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L60" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="cacher:Prism::Router::Cacher?-instance-method">
+      <div class="signature">
+        
+        def <strong>cacher</strong> : <a href="../Prism/Router/Cacher.html">Prism::Router::Cacher</a>?
+
+        <a class="method-permalink" href="#cacher%3APrism%3A%3ARouter%3A%3ACacher%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cacher used by this router. Can be changed in the runtime.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cacher=(cacher)-instance-method">
+      <div class="signature">
+        
+        def <strong>cacher=</strong>(cacher)
+
+        <a class="method-permalink" href="#cacher%3D%28cacher%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cacher used by this router. Can be changed in the runtime.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="call(context:HTTP::Server::Context)-instance-method">
+      <div class="signature">
+        
+        def <strong>call</strong>(context : HTTP::Server::Context)
+
+        <a class="method-permalink" href="#call%28context%3AHTTP%3A%3AServer%3A%3AContext%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L66" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete(path,action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>delete</strong>(path, action : Action.class)
+
+        <a class="method-permalink" href="#delete%28path%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>DELETE</code> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  delete <span class="s">&quot;/bar&quot;</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete(path,&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>delete</strong>(path, &proc : ContextProc)
+
+        <a class="method-permalink" href="#delete%28path%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>DELETE</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  delete <span class="s">&quot;/bar&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from DELETE /bar!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>delete</strong>(path)
+
+        <a class="method-permalink" href="#delete%28path%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> with <code>DELETE</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  delete <span class="s">&quot;/bar&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(path,&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(path, &proc : ContextProc)
+
+        <a class="method-permalink" href="#get%28path%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>GET</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  get <span class="s">&quot;/bar&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from GET /bar!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(path,action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(path, action : Action.class)
+
+        <a class="method-permalink" href="#get%28path%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>GET</code> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  get <span class="s">&quot;/bar&quot;</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(path)
+
+        <a class="method-permalink" href="#get%28path%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> with <code>GET</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  get <span class="s">&quot;/bar&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on(path,methods:Array(String))-instance-method">
+      <div class="signature">
+        
+        def <strong>on</strong>(path, methods : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>))
+
+        <a class="method-permalink" href="#on%28path%2Cmethods%3AArray%28String%29%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> and <em>methods</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  on <span class="s">&quot;/foo&quot;</span>, methods: <span class="s">%w(get post)</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L126" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on(path,methods:Array(String),action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>on</strong>(path, methods : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>), action : Action.class)
+
+        <a class="method-permalink" href="#on%28path%2Cmethods%3AArray%28String%29%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> and <em>methods</em> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  on <span class="s">&quot;/foo&quot;</span>, methods: <span class="s">%w(get post)</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L109" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on(path,methods:Array(String),&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>on</strong>(path, methods : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>), &proc : ContextProc)
+
+        <a class="method-permalink" href="#on%28path%2Cmethods%3AArray%28String%29%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> and <em>methods</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  on <span class="s">&quot;/foo&quot;</span>, methods: <span class="s">%w(get post)</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from </span><span class="i">#{</span>context.request.method<span class="i">}</span><span class="s"> /foo!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L92" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>options</strong>(path)
+
+        <a class="method-permalink" href="#options%28path%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> with <code>OPTIONS</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  options <span class="s">&quot;/bar&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options(path,action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>options</strong>(path, action : Action.class)
+
+        <a class="method-permalink" href="#options%28path%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>OPTIONS</code> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  options <span class="s">&quot;/bar&quot;</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options(path,&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>options</strong>(path, &proc : ContextProc)
+
+        <a class="method-permalink" href="#options%28path%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>OPTIONS</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  options <span class="s">&quot;/bar&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from OPTIONS /bar!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="patch(path,&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>patch</strong>(path, &proc : ContextProc)
+
+        <a class="method-permalink" href="#patch%28path%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>PATCH</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  patch <span class="s">&quot;/bar&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from PATCH /bar!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="patch(path,action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>patch</strong>(path, action : Action.class)
+
+        <a class="method-permalink" href="#patch%28path%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>PATCH</code> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  patch <span class="s">&quot;/bar&quot;</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="patch(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>patch</strong>(path)
+
+        <a class="method-permalink" href="#patch%28path%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> with <code>PATCH</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  patch <span class="s">&quot;/bar&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="post(path,&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>post</strong>(path, &proc : ContextProc)
+
+        <a class="method-permalink" href="#post%28path%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>POST</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  post <span class="s">&quot;/bar&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from POST /bar!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="post(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>post</strong>(path)
+
+        <a class="method-permalink" href="#post%28path%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> with <code>POST</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  post <span class="s">&quot;/bar&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="post(path,action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>post</strong>(path, action : Action.class)
+
+        <a class="method-permalink" href="#post%28path%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>POST</code> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  post <span class="s">&quot;/bar&quot;</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="put(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>put</strong>(path)
+
+        <a class="method-permalink" href="#put%28path%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a empty (status 200) route for <em>path</em> with <code>PUT</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  put <span class="s">&quot;/bar&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="put(path,action:Action.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>put</strong>(path, action : Action.class)
+
+        <a class="method-permalink" href="#put%28path%2Caction%3AAction.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>PUT</code> calling <em>action</em>.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  put <span class="s">&quot;/bar&quot;</span>, <span class="t">MyAction</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="put(path,&amp;proc:ContextProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>put</strong>(path, &proc : ContextProc)
+
+        <a class="method-permalink" href="#put%28path%2C%26proc%3AContextProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a route for <em>path</em> with <code>PUT</code> method.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  put <span class="s">&quot;/bar&quot;</span> <span class="k">do</span> <span class="o">|</span>context<span class="o">|</span>
+    context.response.print(<span class="s">&quot;Hello from PUT /bar!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ws(path,&amp;proc:WebSocketProc)-instance-method">
+      <div class="signature">
+        
+        def <strong>ws</strong>(path, &proc : WebSocketProc)
+
+        <a class="method-permalink" href="#ws%28path%2C%26proc%3AWebSocketProc%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a WebSocket route for <em>path</em>.</p>
+
+<p>A request is currently determined as websocket by <code>"Upgrade": "Websocket"</code> header.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  ws <span class="s">&quot;/foo/:bar&quot;</span> <span class="k">do</span> <span class="o">|</span>socket, context<span class="o">|</span>
+    socket.send(<span class="s">&quot;Hello WS!&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L184" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ws(path,channel:Channel.class)-instance-method">
+      <div class="signature">
+        
+        def <strong>ws</strong>(path, channel : Channel.class)
+
+        <a class="method-permalink" href="#ws%28path%2Cchannel%3AChannel.class%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Draw a WebSocket route for <em>path</em> instantiating <em>channel</em>.</p>
+
+<p>A request is currently determined as websocket by <code>"Upgrade": "Websocket"</code> header.</p>
+
+<pre><code>router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  ws <span class="s">&quot;/foo/:bar&quot;</span>, <span class="t">MyChannel</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/c39b26ea3b7a698fdd01f2f0a5abc0d58cd79749/src/prism/router.cr#L201" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
