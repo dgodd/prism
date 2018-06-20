@@ -43,7 +43,7 @@ struct KnockKnock < Prism::Action
 
   def call
     params[:times].times do
-      text("Knock-knock #{who}\n")
+      text("Knock-knock #{params[:who]}\n")
     end
   end
 end
